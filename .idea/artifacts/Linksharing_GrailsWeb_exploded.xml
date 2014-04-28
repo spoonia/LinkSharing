@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Linksharing:GrailsWeb exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Linksharing_GrailsWeb_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Linksharing/web/GrailsWeb" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="javaee-facet-classes" facet="Linksharing/web/GrailsWeb" />
+          <element id="module-output" name="Linksharing-grailsPlugins" />
+          <element id="javaee-facet-classes" facet="Linksharing-grailsPlugins/web/GrailsWeb" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="Grails User Library (LinkShare-grailsPlugins)" module-name="Linksharing-grailsPlugins" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Linksharing-grailsPlugins/web/GrailsWeb" />
+      <element id="javaee-facet-resources" facet="Linksharing-grailsPlugins/web/GrailsWeb" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,28 @@
+<plugin name='jquery-validation' version='1.9' grailsVersion='1.2 &gt; *'>
+  <author>Lim Chee Kin</author>
+  <authorEmail>limcheekin@vobject.com</authorEmail>
+  <title>JQuery Validation Plugin</title>
+  <description>\
+Simply supplies jQuery Validation resources, depends on jQuery plugin. Use this plugin to avoid resource duplication and conflicts.
+</description>
+  <documentation>http://grails.org/plugin/jquery-validation</documentation>
+  <type>JqueryValidationGrailsPlugin</type>
+  <resources>
+    <resource>JqueryValidationResources</resource>
+    <resource>org.grails.jquery.validation.JqueryValidationTagLib</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='http://repo.grails.org/grails/plugins' url='http://repo.grails.org/grails/plugins/' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies />
+  <plugins>
+    <runtime>
+      <plugin group='org.grails.plugins' name='jquery' version='1.7.2' />
+    </runtime>
+  </plugins>
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>

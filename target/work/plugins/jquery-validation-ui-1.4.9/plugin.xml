@@ -1,0 +1,19 @@
+<plugin name='jquery-validation-ui' version='1.4.9' grailsVersion='1.2.2 &gt; *'>
+  <author>Lim Chee Kin</author>
+  <authorEmail>limcheekin@vobject.com</authorEmail>
+  <title>JQuery Validation UI Plugin - Client Side Validation without writing JavaScript</title>
+  <description>JQuery Validation UI Plugin - Client Side Validation without writing JavaScript</description>
+  <documentation>http://limcheekin.github.com/jquery-validation-ui</documentation>
+  <type>JqueryValidationUiGrailsPlugin</type>
+  <resources>
+    <resource>JqueryValidationUiResources</resource>
+    <resource>org.grails.jquery.validation.ui.JQueryRemoteValidatorController</resource>
+    <resource>org.grails.jquery.validation.ui.JqueryValidationService</resource>
+    <resource>org.grails.jquery.validation.ui.JQueryValidationUiTagLib</resource>
+    <resource>org.grails.jquery.validation.ui.AlphanumericConstraint</resource>
+    <resource>org.grails.jquery.validation.ui.LettersonlyConstraint</resource>
+    <resource>org.grails.jquery.validation.ui.LetterswithbasicpuncConstraint</resource>
+    <resource>org.grails.jquery.validation.ui.PhoneConstraint</resource>
+    <resource>org.grails.jquery.validation.ui.PhoneUSConstraint</resource>
+  </resources>
+</plugin>

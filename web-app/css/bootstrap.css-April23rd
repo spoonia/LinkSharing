@@ -1,0 +1,222 @@
+body fieldset {
+    border: 1px solid #CCCCCC;
+    padding: 30px;
+}
+
+body .input-prepend {
+    height: 25px;
+    position: relative;
+    width: 100%;
+}
+
+body .input-prepend .add-on:first-child, body .input-prepend .btn:first-child, body .input-append input, body .input-prepend input, body .input-append select, body .input-prepend select, body .input-append .uneditable-input, body .input-prepend .uneditable-input {
+    border-radius: 0;
+}
+
+body .input-prepend .add-on {
+    background-color: #ABBF78;
+    border-color: #D3D3D3;
+    border-radius: 0;
+    box-shadow: 2px 2px 6px -5px #888888 inset;
+    color: #CCCCCC;
+    font-size: 20px;
+    height: 100%;
+    left: 0;
+    min-width: 23px;
+    padding: 4px 6px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 23px;
+}
+
+body .field-user {
+    background-image: url("../images/user.png");
+    background-position: 9px center;
+    background-repeat: no-repeat;
+}
+
+body .field-birthdate {
+    background-image: url("../images/birthdate.jpg");
+    background-position: 0px center;
+    background-repeat: no-repeat;
+}
+
+body .field-password {
+    background-image: url("../images/password.png");
+    background-position: 5px center;
+    background-repeat: no-repeat;
+}
+
+body .form-submit-group {
+    line-height: 38px;
+    margin-top: 35px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+body .btn[type="submit"], body a.btn {
+    float: right;
+}
+
+body .btn, body a.btn {
+    background: none repeat scroll 0 0 #99DD44;
+    border: medium none;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 10px 30px;
+    text-shadow: none;
+    text-transform: uppercase;
+    transition: all 500ms ease-out 0s;
+}
+
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B3B3B3;
+    border-image: none;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+
+body .form-submit-group a:not(.btn) {
+    color: #3C3C39;
+    text-decoration: underline;
+}
+
+.search{
+    background-image: url("../images/skin/search.png");
+    background-position: 0.7em center;
+    background-repeat: no-repeat;
+    text-indent: 25px;
+}
+.span7 {
+    width: 700px;
+}
+
+[class*="span"] {
+    float: none;
+    margin: 0 auto;
+    min-height: 1px;
+}
+
+body .add-on ~ input {
+    border-color: #D3D3D3 #D3D3D3 #D3D3D3 #DEDEDE;
+    border-left: 1px dotted #DEDEDE;
+    border-radius: 0;
+    box-shadow: 0 2px 6px -5px #888888 inset;
+    height: 100%;
+    left: 34px;
+    padding: 4px 6px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 92%;
+}
+
+body input, body button, body select, body textarea {
+    font-family: 'Lato',sans-serif;
+}
+form {
+    margin: 0 0 20px;
+}
+
+legend {
+    border: 0 none;
+    color: #333333;
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0;
+}
+
+legend small {
+    color: #999999;
+    font-size: 15px;
+}
+
+body {
+    color: #333333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.control-group {
+    margin-bottom: 10px;
+}
+.input-append, .input-prepend {
+    display: inline-block;
+    font-size: 0;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.input-prepend .add-on:first-child, .input-prepend .btn:first-child {
+    border-radius: 4px 0 0 4px;
+}
+.input-prepend .add-on, .input-prepend .btn {
+    margin-right: -1px;
+}
+.input-append .add-on, .input-prepend .add-on, .input-append .btn, .input-prepend .btn, .input-append .btn-group > .dropdown-toggle, .input-prepend .btn-group > .dropdown-toggle {
+    border-radius: 0;
+    vertical-align: top;
+}
+.input-append .add-on, .input-prepend .add-on {
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+    min-width: 16px;
+    padding: 4px 5px;
+    text-align: center;
+    text-shadow: 0 1px 0 #FFFFFF;
+    width: auto;
+}
+.input-append input, .input-prepend input, .input-append select, .input-prepend select, .input-append .uneditable-input, .input-prepend .uneditable-input, .input-append .dropdown-menu, .input-prepend .dropdown-menu, .input-append .popover, .input-prepend .popover {
+    font-size: 14px;
+}
+.input-append input, .input-prepend input, .input-append select, .input-prepend select, .input-append .uneditable-input, .input-prepend .uneditable-input {
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 0;
+    position: relative;
+    vertical-align: top;
+}
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    border-radius: 4px;
+    color: #555555;
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    vertical-align: middle;
+}

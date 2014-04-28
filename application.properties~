@@ -1,0 +1,5 @@
+#Grails Metadata file
+#Tue Apr 08 15:26:34 IST 2014
+app.grails.version=2.3.5
+app.name=IntroToGrails-Exercise
+app.version=0.1

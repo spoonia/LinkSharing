@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="simian.xsl" type="text/xsl"?>
+<!--
+Similarity Analyser 2.3.35 - http://www.harukizaemon.com/simian
+Copyright (c) 2003-2013 Simon Harris.  All rights reserved.
+Simian is not free unless used solely for non-commercial or evaluation purposes.
+-->
+<simian version="2.3.35">
+    <check ignoreCharacterCase="true" ignoreCurlyBraces="true" ignoreIdentifierCase="true" ignoreModifiers="true" ignoreStringCase="true" threshold="3">
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/utils/org/grails/jquery/validation/ui/PhoneUSConstraint.groovy" startLineNumber="24" endLineNumber="28"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/utils/org/grails/jquery/validation/ui/PhoneConstraint.groovy" startLineNumber="25" endLineNumber="29"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/utils/org/grails/jquery/validation/ui/LetterswithbasicpuncConstraint.groovy" startLineNumber="25" endLineNumber="29"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/utils/org/grails/jquery/validation/ui/LettersonlyConstraint.groovy" startLineNumber="25" endLineNumber="29"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/utils/org/grails/jquery/validation/ui/AlphanumericConstraint.groovy" startLineNumber="25" endLineNumber="29"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/constraints-0.6.0/grails-app/utils/net/zorched/constraints/UsZipConstraint.groovy" startLineNumber="23" endLineNumber="27"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/constraints-0.6.0/grails-app/utils/net/zorched/constraints/UsPhoneConstraint.groovy" startLineNumber="23" endLineNumber="27"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/constraints-0.6.0/grails-app/utils/net/zorched/constraints/SsnConstraint.groovy" startLineNumber="23" endLineNumber="27"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/src/groovy/org/grails/plugin/resource/ResourceProcessor.groovy" startLineNumber="1004" endLineNumber="1008"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/src/groovy/org/grails/plugin/resource/ResourceProcessor.groovy" startLineNumber="966" endLineNumber="970"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="473" endLineNumber="476"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="355" endLineNumber="357"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/dbdoc/MemoryDocVisitor.groovy" startLineNumber="122" endLineNumber="124"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/GormDiff.groovy" startLineNumber="97" endLineNumber="99"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/scripts/_Install.groovy" startLineNumber="94" endLineNumber="96"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/scripts/_Install.groovy" startLineNumber="78" endLineNumber="80"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/scripts/_Install.groovy" startLineNumber="75" endLineNumber="77"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/scripts/_Install.groovy" startLineNumber="51" endLineNumber="53"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="157" endLineNumber="159"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="89" endLineNumber="91"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UserController.groovy" startLineNumber="12" endLineNumber="14"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/AdminController.groovy" startLineNumber="12" endLineNumber="14"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/conf/com/ig/bootcamp/filter/LinkShareFilters.groovy" startLineNumber="8" endLineNumber="10"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/InvitationController.groovy" startLineNumber="172" endLineNumber="175"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/InvitationController.groovy" startLineNumber="165" endLineNumber="167"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/InvitationController.groovy" startLineNumber="106" endLineNumber="109"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/Cacheable.java" startLineNumber="46" endLineNumber="58"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/CachePut.java" startLineNumber="46" endLineNumber="58"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/CacheEvict.java" startLineNumber="44" endLineNumber="56"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/templates/scaffolding/Controller.groovy" startLineNumber="9" endLineNumber="12"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/templates/scaffolding/AsyncController.groovy" startLineNumber="9" endLineNumber="12"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/scaffolding/Controller.groovy" startLineNumber="9" endLineNumber="12"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/scaffolding/AsyncController.groovy" startLineNumber="9" endLineNumber="12"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/TopicController.groovy" startLineNumber="10" endLineNumber="13"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/DocumentResourceController.groovy" startLineNumber="11" endLineNumber="14"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/services/com/ig/bootcamp/BootstrapService.groovy" startLineNumber="170" endLineNumber="172"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="217" endLineNumber="224"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="94" endLineNumber="101"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/services/com/ig/bootcamp/BootstrapService.groovy" startLineNumber="97" endLineNumber="100"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="42" endLineNumber="44"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmUpdateSql.groovy" startLineNumber="23" endLineNumber="27"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmStatus.groovy" startLineNumber="23" endLineNumber="27"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmListLocks.groovy" startLineNumber="23" endLineNumber="27"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmFutureRollbackSql.groovy" startLineNumber="23" endLineNumber="27"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmChangelogSyncSql.groovy" startLineNumber="23" endLineNumber="27"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/codenarc-0.20/dependencies.groovy" startLineNumber="9" endLineNumber="13"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/conf/BuildConfig.groovy" startLineNumber="42" endLineNumber="50"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="183" endLineNumber="186"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="60" endLineNumber="63"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="491" endLineNumber="493"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="424" endLineNumber="426"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/gmetrics-0.3.1/scripts/Gmetrics.groovy" startLineNumber="71" endLineNumber="74"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/codenarc-0.20/scripts/Codenarc.groovy" startLineNumber="187" endLineNumber="189"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/_DatabaseMigrationCommon.groovy" startLineNumber="63" endLineNumber="65"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmGormDiff.groovy" startLineNumber="59" endLineNumber="61"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmDiff.groovy" startLineNumber="59" endLineNumber="61"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmCreateChangelog.groovy" startLineNumber="47" endLineNumber="49"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/src/groovy/org/grails/plugin/resource/ResourceProcessor.groovy" startLineNumber="1000" endLineNumber="1004"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/src/groovy/org/grails/plugin/resource/ResourceProcessor.groovy" startLineNumber="943" endLineNumber="948"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/domain/com/ig/bootcamp/User.groovy" startLineNumber="20" endLineNumber="23"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UserCO.groovy" startLineNumber="18" endLineNumber="21"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/dependencies.groovy" startLineNumber="11" endLineNumber="13"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/codenarc-0.20/dependencies.groovy" startLineNumber="7" endLineNumber="9"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/GenericResponseWrapper.java" startLineNumber="223" endLineNumber="225"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/GenericResponseWrapper.java" startLineNumber="181" endLineNumber="183"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/taglib/org/grails/jquery/validation/ui/JQueryValidationUiTagLib.groovy" startLineNumber="43" endLineNumber="45"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/taglib/org/grails/jquery/validation/ui/JQueryValidationUiTagLib.groovy" startLineNumber="38" endLineNumber="40"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="235" endLineNumber="238"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="227" endLineNumber="230"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="373" endLineNumber="375"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="276" endLineNumber="278"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/HibernateAwareTypeConverter.groovy" startLineNumber="61" endLineNumber="63"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/GormDatabaseTypeConverter.groovy" startLineNumber="33" endLineNumber="36"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="248" endLineNumber="250"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="191" endLineNumber="193"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="142" endLineNumber="144"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="105" endLineNumber="107"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/DocumentResourceController.groovy" startLineNumber="165" endLineNumber="167"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/DocumentResourceController.groovy" startLineNumber="141" endLineNumber="143"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/DocumentResourceController.groovy" startLineNumber="114" endLineNumber="116"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/src/groovy/org/grails/plugin/resource/ResourceProcessor.groovy" startLineNumber="984" endLineNumber="988"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/src/groovy/org/grails/plugin/resource/ResourceProcessor.groovy" startLineNumber="948" endLineNumber="952"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/artifacts/Filters.groovy" startLineNumber="5" endLineNumber="11"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/conf/com/ig/bootcamp/filter/LinkShareFilters.groovy" startLineNumber="22" endLineNumber="28"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/PageFragmentCachingFilter.java" startLineNumber="878" endLineNumber="880"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/AbstractFilter.java" startLineNumber="223" endLineNumber="225"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/grails-app/taglib/org/grails/jquery/validation/JqueryValidationTagLib.groovy" startLineNumber="63" endLineNumber="66"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-ui-1.10.3/grails-app/taglib/com/grailsrocks/jqueryui/JqueryUiTagLib.groovy" startLineNumber="49" endLineNumber="52"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/gmetrics-0.3.1/scripts/Gmetrics.groovy" startLineNumber="58" endLineNumber="60"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/codenarc-0.20/scripts/Codenarc.groovy" startLineNumber="84" endLineNumber="87"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="293" endLineNumber="295"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/InvitationController.groovy" startLineNumber="120" endLineNumber="122"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/grails-app/taglib/org/grails/plugin/resource/ResourceTagLib.groovy" startLineNumber="145" endLineNumber="147"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/grails-app/taglib/org/grails/plugin/resource/ResourceTagLib.groovy" startLineNumber="118" endLineNumber="120"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/dbdoc/RecentChangesWriter.groovy" startLineNumber="32" endLineNumber="34"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/dbdoc/PendingChangesWriter.groovy" startLineNumber="32" endLineNumber="34"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/hibernate-3.6.10.7/src/groovy/grails/plugin/hibernate3/HibernatePluginSupport.groovy" startLineNumber="386" endLineNumber="388"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/hibernate-3.6.10.7/src/groovy/grails/plugin/hibernate3/HibernatePluginSupport.groovy" startLineNumber="130" endLineNumber="132"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-1.11.0.1/dependencies.groovy" startLineNumber="13" endLineNumber="15"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/console-1.3/dependencies.groovy" startLineNumber="13" endLineNumber="15"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator.groovy" startLineNumber="109" endLineNumber="111"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator.groovy" startLineNumber="59" endLineNumber="61"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/grails-app/conf/JqueryValidationResources.groovy" startLineNumber="35" endLineNumber="38"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/grails-app/conf/JqueryValidationResources.groovy" startLineNumber="26" endLineNumber="29"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/scripts/_Install.groovy" startLineNumber="89" endLineNumber="91"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/scripts/_Install.groovy" startLineNumber="70" endLineNumber="72"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/scripts/_Install.groovy" startLineNumber="58" endLineNumber="60"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/constraints-0.6.0/src/java/net/zorched/grails/plugins/validation/DefaultGrailsConstraintClass.java" startLineNumber="62" endLineNumber="65"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/constraints-0.6.0/src/java/net/zorched/grails/plugins/validation/DefaultGrailsConstraintClass.java" startLineNumber="54" endLineNumber="57"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-1.11.0.1/dependencies.groovy" startLineNumber="8" endLineNumber="10"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/codenarc-0.20/dependencies.groovy" startLineNumber="8" endLineNumber="10"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/MigrationUtils.groovy" startLineNumber="109" endLineNumber="113"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/MigrationUtils.groovy" startLineNumber="78" endLineNumber="81"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/grails-app/taglib/org/grails/jquery/validation/JqueryValidationTagLib.groovy" startLineNumber="130" endLineNumber="132"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-ui-1.10.3/grails-app/taglib/com/grailsrocks/jqueryui/JqueryUiTagLib.groovy" startLineNumber="126" endLineNumber="128"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/scripts/GenerateViews.groovy" startLineNumber="47" endLineNumber="49"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/scripts/GenerateController.groovy" startLineNumber="47" endLineNumber="49"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/scripts/GenerateAsyncController.groovy" startLineNumber="49" endLineNumber="51"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/simian-0.1-SNAPSHOT/dependencies.groovy" startLineNumber="1" endLineNumber="3"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/dependencies.groovy" startLineNumber="1" endLineNumber="3"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/dependencies.groovy" startLineNumber="1" endLineNumber="3"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/dependencies.groovy" startLineNumber="1" endLineNumber="3"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/gmetrics-0.3.1/dependencies.groovy" startLineNumber="1" endLineNumber="3"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/constraints-0.6.0/dependencies.groovy" startLineNumber="1" endLineNumber="3"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/codenarc-0.20/dependencies.groovy" startLineNumber="1" endLineNumber="3"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/conf/BuildConfig.groovy" startLineNumber="2" endLineNumber="4"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/src/groovy/org/grails/plugin/resource/CSSBundleResourceMeta.groovy" startLineNumber="17" endLineNumber="19"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/src/groovy/org/grails/plugin/resource/AggregatedResourceMeta.groovy" startLineNumber="66" endLineNumber="68"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/GrailsChange.groovy" startLineNumber="123" endLineNumber="125"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/GrailsChange.groovy" startLineNumber="113" endLineNumber="115"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/mail-1.0.4/MailGrailsPlugin.groovy" startLineNumber="47" endLineNumber="49"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-ui-1.10.3/JqueryUiGrailsPlugin.groovy" startLineNumber="19" endLineNumber="21"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/src/groovy/org/grails/plugin/resource/ResourceProcessor.groovy" startLineNumber="294" endLineNumber="296"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/src/groovy/org/grails/plugin/resource/ResourceProcessor.groovy" startLineNumber="237" endLineNumber="239"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="233" endLineNumber="235"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="185" endLineNumber="187"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="176" endLineNumber="178"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="109" endLineNumber="111"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="477" endLineNumber="479"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="450" endLineNumber="453"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/codenarc-0.20/scripts/Codenarc.groovy" startLineNumber="173" endLineNumber="175"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/codenarc-0.20/scripts/Codenarc.groovy" startLineNumber="127" endLineNumber="129"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/PageFragmentCachingFilter.java" startLineNumber="199" endLineNumber="201"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/PageFragmentCachingFilter.java" startLineNumber="190" endLineNumber="192"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/PageFragmentCachingFilter.java" startLineNumber="178" endLineNumber="180"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/domain/com/ig/bootcamp/User.groovy" startLineNumber="6" endLineNumber="8"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UserCO.groovy" startLineNumber="13" endLineNumber="15"/>
+        </set>
+        <set lineCount="3">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-1.11.0.1/JqueryGrailsPlugin.groovy" startLineNumber="33" endLineNumber="35"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/CacheGrailsPlugin.groovy" startLineNumber="65" endLineNumber="67"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/DocumentResourceController.groovy" startLineNumber="114" endLineNumber="119"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/DocumentResourceController.groovy" startLineNumber="141" endLineNumber="146"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/codenarc-0.20/dependencies.groovy" startLineNumber="1" endLineNumber="5"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/constraints-0.6.0/dependencies.groovy" startLineNumber="1" endLineNumber="5"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/gmetrics-0.3.1/dependencies.groovy" startLineNumber="1" endLineNumber="5"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/dependencies.groovy" startLineNumber="1" endLineNumber="5"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/dependencies.groovy" startLineNumber="1" endLineNumber="5"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/simian-0.1-SNAPSHOT/dependencies.groovy" startLineNumber="1" endLineNumber="4"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="265" endLineNumber="268"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="410" endLineNumber="413"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="28" endLineNumber="31"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="83" endLineNumber="86"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="151" endLineNumber="154"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="205" endLineNumber="208"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/TopicController.groovy" startLineNumber="71" endLineNumber="76"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/TopicController.groovy" startLineNumber="31" endLineNumber="36"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="116" endLineNumber="119"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="239" endLineNumber="242"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/services/com/ig/bootcamp/BootstrapService.groovy" startLineNumber="189" endLineNumber="192"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="284" endLineNumber="287"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="435" endLineNumber="438"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/taglib/org/grails/jquery/validation/ui/JQueryValidationUiTagLib.groovy" startLineNumber="70" endLineNumber="73"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/taglib/org/grails/jquery/validation/ui/JQueryValidationUiTagLib.groovy" startLineNumber="98" endLineNumber="101"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmRollback.groovy" startLineNumber="23" endLineNumber="27"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmRollbackSql.groovy" startLineNumber="23" endLineNumber="27"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmTag.groovy" startLineNumber="23" endLineNumber="27"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-ui-1.10.3/grails-app/taglib/com/grailsrocks/jqueryui/JqueryUiTagLib.groovy" startLineNumber="56" endLineNumber="61"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/grails-app/taglib/org/grails/jquery/validation/JqueryValidationTagLib.groovy" startLineNumber="77" endLineNumber="82"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/artifacts/Tests.groovy" startLineNumber="4" endLineNumber="9"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/testing/CliTests.groovy" startLineNumber="4" endLineNumber="9"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="208" endLineNumber="212"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="218" endLineNumber="222"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/PageFragmentCachingFilter.java" startLineNumber="256" endLineNumber="260"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/PageFragmentCachingFilter.java" startLineNumber="308" endLineNumber="312"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-ui-1.10.3/dependencies.groovy" startLineNumber="9" endLineNumber="14"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/mail-1.0.4/dependencies.groovy" startLineNumber="11" endLineNumber="16"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/dependencies.groovy" startLineNumber="22" endLineNumber="33"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/dependencies.groovy" startLineNumber="10" endLineNumber="16"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="165" endLineNumber="169"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="43" endLineNumber="47"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="31" endLineNumber="34"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="152" endLineNumber="155"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/services/com/ig/bootcamp/BootstrapService.groovy" startLineNumber="123" endLineNumber="126"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/GenericResponseWrapper.java" startLineNumber="169" endLineNumber="172"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/GenericResponseWrapper.java" startLineNumber="190" endLineNumber="193"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/GenericResponseWrapper.java" startLineNumber="211" endLineNumber="214"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/testing/Filters.groovy" startLineNumber="5" endLineNumber="13"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/testing/Generic.groovy" startLineNumber="10" endLineNumber="18"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/testing/Integration.groovy" startLineNumber="8" endLineNumber="16"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/testing/Controller.groovy" startLineNumber="8" endLineNumber="16"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/testing/DomainClass.groovy" startLineNumber="8" endLineNumber="16"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/testing/Service.groovy" startLineNumber="8" endLineNumber="16"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/testing/TagLib.groovy" startLineNumber="8" endLineNumber="16"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/hibernate-3.6.10.7/src/groovy/grails/plugin/hibernate3/HibernatePluginSupport.groovy" startLineNumber="121" endLineNumber="124"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/hibernate-3.6.10.7/src/groovy/grails/plugin/hibernate3/HibernatePluginSupport.groovy" startLineNumber="367" endLineNumber="370"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/console-1.3/grails-app/conf/ConsolePluginResources.groovy" startLineNumber="9" endLineNumber="12"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/console-1.3/grails-app/taglib/org/grails/plugins/console/ConsoleTagLib.groovy" startLineNumber="35" endLineNumber="38"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/TopicController.groovy" startLineNumber="18" endLineNumber="21"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/TopicController.groovy" startLineNumber="57" endLineNumber="60"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/DocumentResourceController.groovy" startLineNumber="121" endLineNumber="127"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/DocumentResourceController.groovy" startLineNumber="148" endLineNumber="154"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="359" endLineNumber="363"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="479" endLineNumber="483"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/codenarc-0.20/scripts/Codenarc.groovy" startLineNumber="236" endLineNumber="243"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/gmetrics-0.3.1/scripts/Gmetrics.groovy" startLineNumber="127" endLineNumber="135"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="104" endLineNumber="107"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="227" endLineNumber="230"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/services/com/ig/bootcamp/BootstrapService.groovy" startLineNumber="175" endLineNumber="178"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/grails-app/taglib/grails/plugin/cache/CacheTagLib.groovy" startLineNumber="54" endLineNumber="60"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/grails-app/taglib/grails/plugin/cache/CacheTagLib.groovy" startLineNumber="91" endLineNumber="96"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/gmetrics-0.3.1/GmetricsGrailsPlugin.groovy" startLineNumber="8" endLineNumber="12"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/JqueryValidationUiGrailsPlugin.groovy" startLineNumber="28" endLineNumber="32"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/JqueryValidationGrailsPlugin.groovy" startLineNumber="30" endLineNumber="35"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="103" endLineNumber="107"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="140" endLineNumber="144"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="247" endLineNumber="250"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/scripts/GenerateAsyncController.groovy" startLineNumber="38" endLineNumber="42"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/scripts/GenerateController.groovy" startLineNumber="36" endLineNumber="40"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/scripts/GenerateViews.groovy" startLineNumber="36" endLineNumber="40"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/scripts/GenerateAll.groovy" startLineNumber="38" endLineNumber="42"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/tomcat-7.0.50/src/groovy/org/grails/plugins/tomcat/InlineExplodedTomcatServer.groovy" startLineNumber="102" endLineNumber="105"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/tomcat-7.0.50/src/groovy/org/grails/plugins/tomcat/fork/TomcatWarRunner.groovy" startLineNumber="81" endLineNumber="84"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="8" endLineNumber="11"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/services/com/ig/bootcamp/BootstrapService.groovy" startLineNumber="16" endLineNumber="19"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/tomcat-7.0.50/src/groovy/org/grails/plugins/tomcat/TomcatServer.groovy" startLineNumber="143" endLineNumber="148"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/tomcat-7.0.50/src/groovy/org/grails/plugins/tomcat/fork/ForkedTomcatServer.groovy" startLineNumber="208" endLineNumber="213"/>
+        </set>
+        <set lineCount="4">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/AdminController.groovy" startLineNumber="11" endLineNumber="14"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UserController.groovy" startLineNumber="11" endLineNumber="14"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/PageFragmentCachingFilter.java" startLineNumber="798" endLineNumber="805"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/PageFragmentCachingFilter.java" startLineNumber="738" endLineNumber="745"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmGormDiff.groovy" startLineNumber="34" endLineNumber="41"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmGenerateGormChangelog.groovy" startLineNumber="23" endLineNumber="30"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="252" endLineNumber="258"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="195" endLineNumber="201"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="146" endLineNumber="152"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="109" endLineNumber="115"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/GenericResponseWrapper.java" startLineNumber="211" endLineNumber="216"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/GenericResponseWrapper.java" startLineNumber="169" endLineNumber="174"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/src/groovy/org/grails/plugin/resource/ResourceProcessor.groovy" startLineNumber="639" endLineNumber="644"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/src/groovy/org/grails/plugin/resource/ResourceProcessor.groovy" startLineNumber="619" endLineNumber="624"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="172" endLineNumber="176"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="50" endLineNumber="54"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/_DatabaseMigrationCommon.groovy" startLineNumber="60" endLineNumber="67"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmGormDiff.groovy" startLineNumber="57" endLineNumber="63"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmDiff.groovy" startLineNumber="57" endLineNumber="63"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/Cacheable.java" startLineNumber="34" endLineNumber="38"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/CachePut.java" startLineNumber="34" endLineNumber="38"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/CacheEvict.java" startLineNumber="32" endLineNumber="36"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/services/com/ig/bootcamp/BootstrapService.groovy" startLineNumber="43" endLineNumber="49"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/services/com/ig/bootcamp/BootstrapService.groovy" startLineNumber="30" endLineNumber="36"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmTag.groovy" startLineNumber="23" endLineNumber="30"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmRollback.groovy" startLineNumber="23" endLineNumber="30"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/DslBuilder.groovy" startLineNumber="370" endLineNumber="375"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/DslBuilder.groovy" startLineNumber="358" endLineNumber="364"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/webxml-1.4.1/dependencies.groovy" startLineNumber="9" endLineNumber="15"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/simian-0.1-SNAPSHOT/dependencies.groovy" startLineNumber="8" endLineNumber="21"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/constraints-0.6.0/dependencies.groovy" startLineNumber="12" endLineNumber="26"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="101" endLineNumber="106"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="177" endLineNumber="182"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/dependencies.groovy" startLineNumber="18" endLineNumber="22"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/simian-0.1-SNAPSHOT/dependencies.groovy" startLineNumber="7" endLineNumber="11"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/dependencies.groovy" startLineNumber="11" endLineNumber="15"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/constraints-0.6.0/dependencies.groovy" startLineNumber="11" endLineNumber="15"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/JqueryValidationUiGrailsPlugin.groovy" startLineNumber="26" endLineNumber="32"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/gmetrics-0.3.1/GmetricsGrailsPlugin.groovy" startLineNumber="6" endLineNumber="12"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/dependencies.groovy" startLineNumber="4" endLineNumber="10"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/console-1.3/dependencies.groovy" startLineNumber="4" endLineNumber="10"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-ui-1.10.3/dependencies.groovy" startLineNumber="3" endLineNumber="9"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-1.11.0.1/dependencies.groovy" startLineNumber="3" endLineNumber="9"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/cache-1.1.1/dependencies.groovy" startLineNumber="7" endLineNumber="13"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/grails-app/taglib/org/grails/jquery/validation/JqueryValidationTagLib.groovy" startLineNumber="54" endLineNumber="60"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-ui-1.10.3/grails-app/taglib/com/grailsrocks/jqueryui/JqueryUiTagLib.groovy" startLineNumber="35" endLineNumber="41"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/grails-app/taglib/org/grails/plugin/resource/ResourceTagLib.groovy" startLineNumber="73" endLineNumber="79"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/src/groovy/org/grails/plugin/resource/ProcessingFilter.groovy" startLineNumber="21" endLineNumber="29"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/src/groovy/org/grails/plugin/resource/DevModeSanityFilter.groovy" startLineNumber="31" endLineNumber="39"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/scripts/GenerateController.groovy" startLineNumber="25" endLineNumber="32"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/scripts/GenerateAsyncController.groovy" startLineNumber="25" endLineNumber="32"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="404" endLineNumber="408"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="259" endLineNumber="263"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/testing/TagLib.groovy" startLineNumber="7" endLineNumber="16"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/testing/Service.groovy" startLineNumber="7" endLineNumber="16"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/testing/DomainClass.groovy" startLineNumber="7" endLineNumber="16"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/testing/Controller.groovy" startLineNumber="7" endLineNumber="16"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/TopicController.groovy" startLineNumber="112" endLineNumber="120"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/DocumentResourceController.groovy" startLineNumber="175" endLineNumber="183"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/templates/scaffolding/Controller.groovy" startLineNumber="87" endLineNumber="95"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/templates/scaffolding/AsyncController.groovy" startLineNumber="96" endLineNumber="105"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/scaffolding/Controller.groovy" startLineNumber="87" endLineNumber="95"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/scaffolding/AsyncController.groovy" startLineNumber="96" endLineNumber="105"/>
+        </set>
+        <set lineCount="5">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/mail-1.0.4/dependencies.groovy" startLineNumber="10" endLineNumber="16"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/dependencies.groovy" startLineNumber="9" endLineNumber="16"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-ui-1.10.3/dependencies.groovy" startLineNumber="8" endLineNumber="14"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-1.11.0.1/dependencies.groovy" startLineNumber="1" endLineNumber="9"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-ui-1.10.3/dependencies.groovy" startLineNumber="1" endLineNumber="9"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="109" endLineNumber="118"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="146" endLineNumber="155"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/TopicController.groovy" startLineNumber="131" endLineNumber="136"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/InvitationController.groovy" startLineNumber="193" endLineNumber="198"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UserController.groovy" startLineNumber="101" endLineNumber="106"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/AdminController.groovy" startLineNumber="26" endLineNumber="31"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="344" endLineNumber="349"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-1.11.0.1/src/groovy/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider.groovy" startLineNumber="73" endLineNumber="78"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-1.11.0.1/src/groovy/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider.groovy" startLineNumber="87" endLineNumber="92"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="80" endLineNumber="86"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/grails-app/services/org/grails/jquery/validation/ui/JqueryValidationService.groovy" startLineNumber="102" endLineNumber="108"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/scripts/_Install.groovy" startLineNumber="67" endLineNumber="72"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-ui-1.4.9/scripts/_Install.groovy" startLineNumber="86" endLineNumber="91"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/DomainClassPropertyComparator.java" startLineNumber="44" endLineNumber="52"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/SimpleDomainClassPropertyComparator.java" startLineNumber="35" endLineNumber="43"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="93" endLineNumber="98"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="162" endLineNumber="167"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="55" endLineNumber="61"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="234" endLineNumber="240"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="110" endLineNumber="117"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="186" endLineNumber="193"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/console-1.3/dependencies.groovy" startLineNumber="1" endLineNumber="9"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/dependencies.groovy" startLineNumber="1" endLineNumber="9"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/webxml-1.4.1/dependencies.groovy" startLineNumber="1" endLineNumber="9"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/dependencies.groovy" startLineNumber="1" endLineNumber="10"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/console-1.3/dependencies.groovy" startLineNumber="1" endLineNumber="10"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmUpdateCount.groovy" startLineNumber="23" endLineNumber="34"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmRollbackCount.groovy" startLineNumber="23" endLineNumber="34"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="233" endLineNumber="240"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="185" endLineNumber="193"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="109" endLineNumber="117"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/tomcat-7.0.50/src/groovy/org/grails/plugins/tomcat/fork/ForkedTomcatServer.groovy" startLineNumber="195" endLineNumber="205"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/tomcat-7.0.50/src/groovy/org/grails/plugins/tomcat/TomcatServer.groovy" startLineNumber="126" endLineNumber="136"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/simian-0.1-SNAPSHOT/dependencies.groovy" startLineNumber="1" endLineNumber="8"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/dependencies.groovy" startLineNumber="1" endLineNumber="12"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/dependencies.groovy" startLineNumber="1" endLineNumber="12"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/gmetrics-0.3.1/dependencies.groovy" startLineNumber="1" endLineNumber="12"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/constraints-0.6.0/dependencies.groovy" startLineNumber="1" endLineNumber="12"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/InvitationController.groovy" startLineNumber="88" endLineNumber="94"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="271" endLineNumber="277"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="90" endLineNumber="96"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="207" endLineNumber="213"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmUpdateCountSql.groovy" startLineNumber="23" endLineNumber="34"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmRollbackCountSql.groovy" startLineNumber="23" endLineNumber="34"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmPreviousChangesetSql.groovy" startLineNumber="23" endLineNumber="34"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/scripts/GenerateViews.groovy" startLineNumber="34" endLineNumber="44"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/scripts/GenerateController.groovy" startLineNumber="34" endLineNumber="44"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/scripts/GenerateAsyncController.groovy" startLineNumber="36" endLineNumber="46"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/grails-app/taglib/org/grails/plugin/resource/ResourceTagLib.groovy" startLineNumber="46" endLineNumber="57"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/grails-app/taglib/org/grails/jquery/validation/JqueryValidationTagLib.groovy" startLineNumber="29" endLineNumber="38"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-ui-1.10.3/grails-app/taglib/com/grailsrocks/jqueryui/JqueryUiTagLib.groovy" startLineNumber="10" endLineNumber="19"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="343" endLineNumber="349"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UserController.groovy" startLineNumber="100" endLineNumber="106"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/InvitationController.groovy" startLineNumber="192" endLineNumber="198"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/TopicController.groovy" startLineNumber="130" endLineNumber="136"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/TopicController.groovy" startLineNumber="94" endLineNumber="101"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/TopicController.groovy" startLineNumber="66" endLineNumber="73"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/resources-1.2.1/grails-app/taglib/org/grails/plugin/resource/ResourceTagLib.groovy" startLineNumber="61" endLineNumber="69"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/grails-app/taglib/org/grails/jquery/validation/JqueryValidationTagLib.groovy" startLineNumber="42" endLineNumber="50"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-ui-1.10.3/grails-app/taglib/com/grailsrocks/jqueryui/JqueryUiTagLib.groovy" startLineNumber="23" endLineNumber="31"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-ui-1.10.3/dependencies.groovy" startLineNumber="3" endLineNumber="14"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/dependencies.groovy" startLineNumber="4" endLineNumber="16"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="108" endLineNumber="117"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/taglib/com/ig/bootcamp/ApplicationTagLib.groovy" startLineNumber="184" endLineNumber="193"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmRollbackCountSql.groovy" startLineNumber="23" endLineNumber="36"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/scripts/DbmUpdateCountSql.groovy" startLineNumber="23" endLineNumber="36"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/GrailsPrecondition.groovy" startLineNumber="121" endLineNumber="154"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/database-migration-1.3.8/src/groovy/grails/plugin/databasemigration/GrailsChange.groovy" startLineNumber="232" endLineNumber="265"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/simian-0.1-SNAPSHOT/dependencies.groovy" startLineNumber="1" endLineNumber="10"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/dependencies.groovy" startLineNumber="1" endLineNumber="14"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/gmetrics-0.3.1/dependencies.groovy" startLineNumber="1" endLineNumber="14"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/constraints-0.6.0/dependencies.groovy" startLineNumber="1" endLineNumber="14"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/constraints-0.6.0/dependencies.groovy" startLineNumber="1" endLineNumber="15"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/dependencies.groovy" startLineNumber="1" endLineNumber="15"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/simian-0.1-SNAPSHOT/dependencies.groovy" startLineNumber="1" endLineNumber="11"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="87" endLineNumber="96"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="268" endLineNumber="277"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="204" endLineNumber="213"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="144" endLineNumber="156"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="23" endLineNumber="35"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/simian-0.1-SNAPSHOT/dependencies.groovy" startLineNumber="1" endLineNumber="21"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/constraints-0.6.0/dependencies.groovy" startLineNumber="1" endLineNumber="26"/>
+        </set>
+        <set lineCount="13">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UserController.groovy" startLineNumber="98" endLineNumber="110"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/InvitationController.groovy" startLineNumber="190" endLineNumber="202"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/TopicController.groovy" startLineNumber="128" endLineNumber="140"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="87" endLineNumber="107"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" startLineNumber="124" endLineNumber="144"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/scripts/GenerateAsyncController.groovy" startLineNumber="36" endLineNumber="55"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/scripts/GenerateController.groovy" startLineNumber="34" endLineNumber="53"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-ui-1.10.3/grails-app/taglib/com/grailsrocks/jqueryui/JqueryUiTagLib.groovy" startLineNumber="103" endLineNumber="121"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/grails-app/taglib/org/grails/jquery/validation/JqueryValidationTagLib.groovy" startLineNumber="108" endLineNumber="126"/>
+        </set>
+        <set lineCount="15">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/InvitationController.groovy" startLineNumber="60" endLineNumber="75"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="243" endLineNumber="258"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="62" endLineNumber="77"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="178" endLineNumber="193"/>
+        </set>
+        <set lineCount="16">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="66" endLineNumber="86"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="189" endLineNumber="209"/>
+        </set>
+        <set lineCount="17">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="177" endLineNumber="194"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="242" endLineNumber="259"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="61" endLineNumber="78"/>
+        </set>
+        <set lineCount="18">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/codenarc-0.20/scripts/Codenarc.groovy" startLineNumber="197" endLineNumber="229"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/gmetrics-0.3.1/scripts/Gmetrics.groovy" startLineNumber="83" endLineNumber="124"/>
+        </set>
+        <set lineCount="24">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-ui-1.10.3/grails-app/taglib/com/grailsrocks/jqueryui/JqueryUiTagLib.groovy" startLineNumber="7" endLineNumber="43"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/jquery-validation-1.9/grails-app/taglib/org/grails/jquery/validation/JqueryValidationTagLib.groovy" startLineNumber="26" endLineNumber="62"/>
+        </set>
+        <set lineCount="34">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="91" endLineNumber="138"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/UtilController.groovy" startLineNumber="214" endLineNumber="261"/>
+        </set>
+        <set lineCount="40">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="56" endLineNumber="96"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/grails-app/controllers/com/ig/bootcamp/util/LoginController.groovy" startLineNumber="237" endLineNumber="277"/>
+        </set>
+        <set lineCount="58">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/scaffolding/Controller.groovy" startLineNumber="1" endLineNumber="99"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/templates/scaffolding/Controller.groovy" startLineNumber="1" endLineNumber="99"/>
+        </set>
+        <set lineCount="65">
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/target/work/plugins/scaffolding-2.0.1/src/templates/scaffolding/AsyncController.groovy" startLineNumber="1" endLineNumber="109"/>
+            <block sourceFile="/home/sandeep/IdeaProjects/Linksharing/src/templates/scaffolding/AsyncController.groovy" startLineNumber="1" endLineNumber="109"/>
+        </set>
+        <summary duplicateFileCount="122" duplicateLineCount="1839" duplicateBlockCount="297" totalFileCount="327" totalRawLineCount="28314" totalSignificantLineCount="13071" processingTime="2325"/>
+    </check>
+</simian>
