@@ -1,5 +1,6 @@
 package com.ig.bootcamp
 
+import com.ig.bootcamp.util.EmailCO
 import org.springframework.transaction.annotation.Transactional
 
 @Transactional
@@ -10,23 +11,11 @@ class LinkshareMailService {
 	static transactional = false
 
 	@Transactional(noRollbackFor = Exception.class)
-	def sendInvite(long userId
-	               , boolean asyncStatus
-	               , String mailTo
-	               , String mailFrom
-	               , String mailCC
-	               , String mailBCC
-	               , String mailSubject
-	               , String contentType
-	               , String message) {
+	def sendMail(EmailCO emailCO, boolean asyncStatus) {
 
-		MailLogger mailLogger = new MailLogger(userId: userId, mailTo: mailTo, mailFrom: mailFrom, mailCc: mailCC, mailBcc: mailBCC,
-				mailSubject: mailSubject, contentType: contentType, mailMessage: message, mailCreationTime: new Date())
+		MailLogger mailLogger = new MailLogger()
+		mailLogger.properties = emailCO.properties
 		mailLogger.save flush: true
-
-		println MailLogger.list().each {
-			println it.toString()
-		}
 
 		println("**************************************************************************")
 		/*
@@ -36,10 +25,10 @@ class LinkshareMailService {
 
 		mailService.sendMail {
 			async asyncStatus
-			to mailTo
-			from mailFrom
-			subject mailSubject
-			html message
+			to emailCO.mailTo
+			from emailCO.mailFrom
+			subject emailCO.subject
+			html emailCO.message
 		}
 	}
 }

@@ -44,6 +44,10 @@
 		jQuery.validator.addMethod("notEqual", function (value, element, param) {
 			return this.optional(element) || value != $(param).val();
 		}, "This has to be different...");
+
+		jQuery.validator.addMethod("equalsTo", function (value, element, param) {
+			return value.toLowerCase() == $(param).val().toLowerCase();
+		}, jQuery.validator.format('Value not matches the given regular expression '+($("#userId").attr('id'))+'.'));
 	</script>
 </head>
 

@@ -32,7 +32,7 @@ class UtilController {
 			println "Error while getting/saving Role::${roles.toString()}"
 			roles.getErrors().getAllErrors().each {
 				error ->
-					println error.toString(); System.exit(0);
+					println error.toString(); 
 			}
 		}
 		//-------------------------------------------------------------------------------------------------------------
@@ -51,7 +51,7 @@ class UtilController {
 			println "Error while getting/saving User::${user.toString()}"
 			user.getErrors().getAllErrors().each {
 				error ->
-					println error.toString(); System.exit(0);
+					println error.toString(); 
 			}
 		}
 		//-------------------------------------------------------------------------------------------------------------
@@ -67,7 +67,7 @@ class UtilController {
 			println "Error while getting/saving Topic::${topic.toString()}"
 			topic.getErrors().getAllErrors().each {
 				error ->
-					println error.toString(); System.exit(0);
+					println error.toString(); 
 			}
 		}
 		//-------------------------------------------------------------------------------------------------------------
@@ -83,62 +83,12 @@ class UtilController {
 			println "Error while getting/saving Subscription::${subscriptions.toString()}"
 			subscriptions.getErrors().getAllErrors().each {
 				error ->
-					println error.toString(); System.exit(0);
+					println error.toString(); 
 			}
 		}
 		//-------------------------------------------------------------------------------------------------------------
-		Integer count = ResourceInfo.countByTopic(topic) + 1
-		for (int i = count; i <= 10; i++) {
-//			if (i % 2) {
-			resourceInfo = new LinkResource(topic: topic, title: "ResourceTitle_$i",
-					summary: "Providing a sample summary to topic '$topic' with title 'ResourceTitle_$i'",
-					type: 'Url', url: "http://www.google.com/?q=$i")
-//			} else {
-//				resourceInfo = new DocumentResource(topic: topic, title: "ResourceTitle_$i",
-//						summary: "Providing a sample summary to topic '$topic' with title 'ResourceTitle_$i'",
-//						type: 'Document', docName: "Document_$i", contentType: "Text/HTML", size: "10${i}KB")
-//			}
-			if (resourceInfo.validate()) {
-				resourceInfo.save()
-			}
-			if (resourceInfo.hasErrors()) {
-				println "Error while getting/saving Resource::${resourceInfo.toString()}"
-				resourceInfo.getErrors().getAllErrors().each {
-					error ->
-						println error.toString(); System.exit(0);
-				}
-			} else {
-				userResourceMapping = new UserResourceMapping(resource: resourceInfo, subscription: subscriptions,
-						isRead: false)
-				if (userResourceMapping.validate()) {
-					userResourceMapping.save()
-				}
-				if (userResourceMapping.hasErrors()) {
-					println "Error while getting/saving ResourceMapping::${userResourceMapping.toString()}"
-					userResourceMapping.getErrors().getAllErrors().each {
-						error ->
-							println error.toString(); System.exit(0);
-					}
-				}
-			}
-		}
-		list = UserResourceMapping
-				.findAllBySubscriptionAndIsRead(subscriptions, false)
-				.sort { Math.random() }
-				.with { it.size() <= 3 ?: it.subList(0, 3) }
-		list.each {
-			it.setIsRead(true)
-			if (it.validate()) {
-				it.save(flush: true)
-			}
-			if (it.hasErrors()) {
-				println "Error while marking resource as read::${it.toString()}"
-				it.getErrors().getAllErrors().each {
-					error ->
-						println error.toString(); System.exit(0);
-				}
-			}
-		}
+		createResources(topic, subscriptions)
+		markResourcesAsRead(subscriptions)
 
 		//=============================================================================================================
 		if (Roles.countByRole('Admin') == 0) {
@@ -153,7 +103,7 @@ class UtilController {
 			println "Error while getting/saving Role::${roles.toString()}"
 			roles.getErrors().getAllErrors().each {
 				error ->
-					println error.toString(); System.exit(0);
+					println error.toString(); 
 			}
 		}
 		//-------------------------------------------------------------------------------------------------------------
@@ -173,7 +123,7 @@ class UtilController {
 			println "Error while getting/saving User::${user.toString()}"
 			user.getErrors().getAllErrors().each {
 				error ->
-					println error.toString(); System.exit(0);
+					println error.toString(); 
 			}
 		}
 		//-------------------------------------------------------------------------------------------------------------
@@ -190,7 +140,7 @@ class UtilController {
 			println "Error while getting/saving Topic::${topic.toString()}"
 			topic.getErrors().getAllErrors().each {
 				error ->
-					println error.toString(); System.exit(0);
+					println error.toString(); 
 			}
 		}
 		//-------------------------------------------------------------------------------------------------------------
@@ -206,11 +156,54 @@ class UtilController {
 			println "Error while getting/saving Subscription::${subscriptions.toString()}"
 			subscriptions.getErrors().getAllErrors().each {
 				error ->
-					println error.toString(); System.exit(0);
+					println error.toString(); 
 			}
 		}
 		//-------------------------------------------------------------------------------------------------------------
-		count = ResourceInfo.countByTopic(topic) + 1
+		createResources(topic, subscriptions)
+		markResourcesAsRead(subscriptions)
+		//*************************************************************************************************************
+		//Fetch unread items for a user
+		println '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+		def listUnread = {
+			String userId ->
+				user = User.findByUserId(userId)
+				subscriptions = Subscriptions.findBySubscriber(user)
+				list = UserResourceMapping
+						.findAllBySubscriptionAndIsRead(subscriptions, false)
+				list.each {
+					print it.subscription.toString()
+					println it.resource.toString()
+				}
+		}
+		listUnread('admin')
+	}
+
+	private markResourcesAsRead(Subscriptions subscriptions) {
+		List<UserResourceMapping> list
+		list = UserResourceMapping
+				.findAllBySubscriptionAndIsRead(subscriptions, false)
+				.sort { Math.random() }
+				.with { it.size() <= 3 ?: it.subList(0, 3) }
+		list.each {
+			it.setIsRead(true)
+			if (it.validate()) {
+				it.save(flush: true)
+			}
+			if (it.hasErrors()) {
+				println "Error while marking resource as read::${it.toString()}"
+				it.getErrors().getAllErrors().each {
+					error ->
+						println error.toString();
+				}
+			}
+		}
+	}
+
+	private createResources(Topic topic, Subscriptions subscriptions) {
+		ResourceInfo resourceInfo
+		UserResourceMapping userResourceMapping
+		Integer count = ResourceInfo.countByTopic(topic) + 1
 		for (int i = count; i <= 10; i++) {
 //			if (i % 2) {
 			resourceInfo = new LinkResource(topic: topic, title: "ResourceTitle_$i",
@@ -228,7 +221,7 @@ class UtilController {
 				println "Error while getting/saving Resource::${resourceInfo.toString()}"
 				resourceInfo.getErrors().getAllErrors().each {
 					error ->
-						println error.toString(); System.exit(0);
+						println error.toString();
 				}
 			} else {
 				userResourceMapping = new UserResourceMapping(resource: resourceInfo, subscription: subscriptions,
@@ -240,42 +233,10 @@ class UtilController {
 					println "Error while getting/saving ResourceMapping::${userResourceMapping.toString()}"
 					userResourceMapping.getErrors().getAllErrors().each {
 						error ->
-							println error.toString(); System.exit(0);
+							println error.toString();
 					}
 				}
 			}
 		}
-		list = UserResourceMapping
-				.findAllBySubscriptionAndIsRead(subscriptions, false)
-				.sort { Math.random() }
-				.with { it.size() <= 3 ?: it.subList(0, 3) }
-		list.each {
-			it.setIsRead(true)
-			if (it.validate()) {
-				it.save(flush: true)
-			}
-			if (it.hasErrors()) {
-				println "Error while marking resource as read::${it.toString()}"
-				it.getErrors().getAllErrors().each {
-					error ->
-						println error.toString(); System.exit(0);
-				}
-			}
-		}
-		//*************************************************************************************************************
-		//Fetch unread items for a user
-		println '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
-		def listUnread = {
-			String userId ->
-				user = User.findByUserId(userId)
-				subscriptions = Subscriptions.findBySubscriber(user)
-				list = UserResourceMapping
-						.findAllBySubscriptionAndIsRead(subscriptions, false)
-				list.each {
-					print it.subscription.toString()
-					println it.resource.toString()
-				}
-		}
-		listUnread('admin')
 	}
 }

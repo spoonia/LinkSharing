@@ -1,4 +1,6 @@
-import com.ig.bootcamp.DemoConstraint
+import com.ig.bootcamp.EqualsToConstraint
+import com.ig.bootcamp.CustomUniqueConstraint
+import org.codehaus.groovy.grails.validation.ConstrainedProperty
 
 // locations to search for config files that get merged into the main config;
 // config files can be ConfigSlurper scripts, Java properties files, or classes
@@ -215,7 +217,7 @@ jqueryValidationUi {
 			alphanumeric        : 'true',
 			letterswithbasicpunc: 'true',
 			lettersonly         : 'true',
-			demo                : 'Hello its a Demo...'
+			equalsTo            : 'EqualsTo',
 	]
 }
 
@@ -233,7 +235,12 @@ grails.resources.modules = {
 }
 
 //Register my custom constraint---------
-org.codehaus.groovy.grails.validation.ConstrainedProperty.registerNewConstraint(DemoConstraint.CONSTRAINT_NAME, DemoConstraint.class)
+ConstrainedProperty.registerNewConstraint(
+		EqualsToConstraint.CONSTRAINT_NAME,
+		EqualsToConstraint.class)
+ConstrainedProperty.registerNewConstraint(
+		CustomUniqueConstraint.UNIQUE_CONSTRAINT,
+		CustomUniqueConstraint.class)
 
 simian {
 	reportsDir = "target/simian-reports"

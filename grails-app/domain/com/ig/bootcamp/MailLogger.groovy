@@ -6,14 +6,13 @@ class MailLogger {
 	String mailFrom
 	String mailCc
 	String mailBcc
-	String mailSubject
+	String subject
 	String contentType
-	String mailMessage
-	Date mailCreationTime
-
+	String message
+	Date creationTime
 
 	static mapping = {
-		mailMessage type: 'text'
+		message type: 'text'
 	}
 
 	static constraints = {
@@ -22,26 +21,27 @@ class MailLogger {
 		mailFrom nullable: false, blank: false
 		mailCc nullable: true, blank: true
 		mailBcc nullable: true, blank: true
-		mailSubject nullable: false, blank: false
+		subject nullable: false, blank: false
 		contentType nullable: false, blank: false
-		mailMessage nullable: false, blank: false
-		mailCreationTime nullable: false, blank: false
+		message nullable: false, blank: false
+		creationTime nullable: false, blank: false
 	}
 
 
 	@Override
 	public String toString() {
 		return "MailLogger{" +
-				"userId=" + userId +
-				", mailTo='" + mailTo + '\'' +
-				", mailFrom='" + mailFrom + '\'' +
-				", mailCc='" + mailCc + '\'' +
-				", mailBcc='" + mailBcc + '\'' +
-				", mailSubject='" + mailSubject + '\'' +
+				"id=" + id +
+				", userId=" + userId +
+				", to='" + mailTo + '\'' +
+				", from='" + mailFrom + '\'' +
+				", cc='" + mailCc + '\'' +
+				", bcc='" + mailBcc + '\'' +
+				", subject='" + subject + '\'' +
 				", contentType='" + contentType + '\'' +
-				", mailMessage='" + mailMessage + '\'' +
-				", mailCreationTime=" + mailCreationTime +
-				", id=" + id +
-				"} " + super.toString();
+				", message='" + message + '\'' +
+				", creationTime=" + creationTime +
+				", version=" + version +
+				"} ";
 	}
 }

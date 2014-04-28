@@ -4,16 +4,17 @@ import com.ig.bootcamp.Roles
 import com.ig.bootcamp.User
 
 import javax.servlet.http.HttpServletRequest
+import java.text.SimpleDateFormat
 
 class LoginController {
 
-	def mailService
+	def linkshareMailService
 
 	def beforeInterceptor = [action: this.&auth, controller: LoginController]
 
 	private auth() {
 		flash.message = ""
-		if (session.user && !actionName.equalsIgnoreCase("logout") && !actionName.equalsIgnoreCase("wow")) {
+		if (session.user && !actionName.equalsIgnoreCase("logout")) {
 			redirect(controller: 'user', action: 'dashboard')
 			return false
 		}
@@ -53,48 +54,8 @@ class LoginController {
 					hex = "${webRequest.baseUrl}/login/activate?id=${hex}"
 					println hex
 
-					mailService.sendMail {
-						async true
-						to user.email
-						from "LinkShare<sandeep.poonia@intelligrape.com>"
-						subject "Welcome to LinkShare - User account activation"
-						html """
-							<style type="text/css">
-								body, td{font-family:arial,sans-serif;font-size:13px}
-								a:link, a:active {color:#1155CC; text-decoration:none}
-								a:hover {text-decoration:underline; cursor: pointer}
-								a:visited{color:##6611CC}
-								img{border:0px}
-								pre {
-									white-space: pre; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; white-space: pre-wrap;
-									word-wrap: break-word; max-width: 800px; overflow: auto;
-								}
-							</style>
-							<div class="maincontent">
-								<table width=100% cellpadding=12 cellspacing=0 border=0>
-									<tr>
-										<td>
-											<div style="overflow: hidden;">
-												Hi ${user.userName},<br><br>
-												Your new user account (${user.userId}) with the email address <b>
-												<a href="mailto:${user.email}" target="_blank">${user.email}</a>
-												</b> is now set up.<br><br>
-												Please use the link below to activate your account.<br>
-												<a href="${hex}"
-												target="_blank">Click here</a><br><br>
-												You will be able to change your parameters (password, ...) once your account is activated.<br><br><br><br>
-												If you have not requested the creation of a LinkShare account,
-												or if you think this is an unauthorized use of your email address,
-												please forward this email to <b>
-												<a href="mailto:sandeep.poonia@intelligrape.com" target="_blank">accounts@linkshare.com</a></b>.
-												<br><br><br><br><i>This email has been generated automatically. Please, do not reply.</i>
-											</div>
-										</td>
-									</tr>
-								</table>
-							</div>
-						"""
-					}
+					sendRegistrationMail(user, hex)
+
 					flash.message = "Registration successful. Follow the steps mailed to your registered mail account" +
 							" to activate your account!"
 					flash.put('id', user.id)
@@ -106,11 +67,12 @@ class LoginController {
 		render(controller: "login", view: "register")
 	}
 
+
 	def login = {
 		if (request.method == 'POST') {
 			def passwordHashed = params.password.encodeAsSHA1()
 			User user = User.findByUserIdOrEmail(params.username, params.username)
-			String message
+			String message = null
 			if (user) {
 				boolean enabled = user.enabled
 				boolean locked = user.locked
@@ -159,7 +121,7 @@ class LoginController {
 
 	def reset = {
 		if (request.method == 'POST') {
-			def message = "EmailId not registered!"
+			def flashMessage = "EmailId not registered!"
 
 			def email = params.email
 			if (User.countByEmailAndEnabled(email, true)) {
@@ -168,59 +130,28 @@ class LoginController {
 				user.resetPassword = true
 				if (user.validate()) {
 					user.save()
-					message = "An Email has been sent to the given address to reset the password!"
-					mailService.sendMail {
-						async true
-						to "${email}"
-						from "LinkShare<sandeep.poonia@intelligrape.com>"
-						subject "Welcome to LinkShare - Password Reset"
-						html """
-							<style type="text/css">
-								body, td{font-family:arial,sans-serif;font-size:13px}
-								a:link, a:active {color:#1155CC; text-decoration:none}
-								a:hover {text-decoration:underline; cursor: pointer}
-								a:visited{color:##6611CC}
-								img{border:0px}
-								pre {
-									white-space: pre; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; white-space: pre-wrap;
-									word-wrap: break-word; max-width: 800px; overflow: auto;
-								}
-							</style>
-							<div class="maincontent">
-								<table width=100% cellpadding=12 cellspacing=0 border=0>
-									<tr>
-										<td>
-											<div style="overflow: hidden;">
-												Hi ${user.userName},<br><br>
-												You have requested to have your password reset for your account 
-												from [${getClientIpAddress(request)}]<br><br>
-												Please use below details to login to your account.<br>
-												<strong>UserId</strong>-${user.userId}<br>
-												<strong>Email-Id</strong>-${user.email}<br>
-												<strong>Password</strong>-${user.plainPassword}<br>
-												<br><br>
-												Change your password once you login.<br><br><br><br>
-												If you have not made this request,
-												or if you think this is an unauthorized use of your email address,
-												please forward this email to <b>
-												<a href="mailto:sandeep.poonia@intelligrape.com" target="_blank">accounts@linkshare.com</a></b>.
-												<br><br><br><br><i>This email has been generated automatically. Please, do not reply.</i>
-											</div>
-										</td>
-									</tr>
-								</table>
-							</div>
-						"""
-					}
+					flashMessage = "An Email has been sent to the given address to reset the password!"
+
+					EmailCO emailCO = new EmailCO()
+					emailCO.userId = user.id
+					emailCO.mailTo = user.email
+					emailCO.mailFrom = "LinkShare<sandeep.poonia@intelligrape.com>"
+					emailCO.mailCc = null
+					emailCO.mailBcc = null
+					emailCO.subject = "Welcome to LinkShare - Password Reset"
+					emailCO.contentType = "html"
+					emailCO.message = render template: 'ResetPasswordTemplate', model: [user: user, clientIP: getClientIpAddress(request)]
+
+					linkshareMailService.sendMail(emailCO, true)
 				} else if (user.hasErrors()) {
 					user.errors.each {
 						errors ->
 							println errors.toString()
 					}
-					message = "An error has occurred while processing the request!"
+					flashMessage = "An error has occurred while processing the request!"
 				}
 			}
-			flash.message = message
+			flash.message = flashMessage
 		}
 		render(controller: "login", view: "reset")
 	}
@@ -229,53 +160,13 @@ class LoginController {
 		User user = User.findById(flash?.id)
 		if (user) {
 			flash.put('mailSentCount', flash.mailSentCount)
-			def hex = user.userId + '$' + (new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS")
+			def hex = user.userId + '$' + (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS")
 					.parse(user.lastUpdated.toString()))
 			hex = hex.encodeAsBase64()
 			hex = "${webRequest.baseUrl}/login/activate?id=${hex}"
 
-			mailService.sendMail {
-				async true
-				to user.email
-				from "LinkShare<sandeep.poonia@intelligrape.com>"
-				subject "Welcome to LinkShare - User account activation"
-				html """
-					<style type="text/css">
-						body, td{font-family:arial,sans-serif;font-size:13px}
-						a:link, a:active {color:#1155CC; text-decoration:none}
-						a:hover {text-decoration:underline; cursor: pointer}
-						a:visited{color:##6611CC}
-						img{border:0px}
-						pre {
-							white-space: pre; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; white-space: pre-wrap;
-							word-wrap: break-word; max-width: 800px; overflow: auto;
-						}
-					</style>
-					<div class="maincontent">
-						<table width=100% cellpadding=12 cellspacing=0 border=0>
-							<tr>
-								<td>
-									<div style="overflow: hidden;">
-										Hi ${user.userName},<br><br>
-										Your new user account (${user.userId}) with the email address <b>
-										<a href="mailto:${user.email}" target="_blank">${user.email}</a>
-										</b> is now set up.<br><br>
-										Please use the link below to activate your account.<br>
-										<a href="${hex}"
-										target="_blank">Click here</a><br><br>
-										You will be able to change your parameters (password, ...) once your account is activated.<br><br><br><br>
-										If you have not requested the creation of a LinkShare account,
-										or if you think this is an unauthorized use of your email address,
-										please forward this email to <b>
-										<a href="mailto:sandeep.poonia@intelligrape.com" target="_blank">accounts@linkshare.com</a></b>.
-										<br><br><br><br><i>This email has been generated automatically. Please, do not reply.</i>
-									</div>
-								</td>
-							</tr>
-						</table>
-					</div>
-				"""
-			}
+			sendRegistrationMail(user, hex)
+
 			flash.message = "Email Sent. Follow the steps mailed to your registered mail account" +
 					" to activate your account!"
 			flash.put('success', true)
@@ -296,7 +187,7 @@ class LoginController {
 				String[] id = new String(params.id.decodeBase64()).split("[\$]")
 				if (id.length == 2) {
 					String userId = id[0]
-					Date date = new java.text.SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy").parse(id[1])
+					Date date = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy").parse(id[1])
 					println userId
 					println date
 					User user = User.findByUserId(userId)
@@ -332,14 +223,29 @@ class LoginController {
 		redirect(controller: 'login')
 	}
 
-	private passwordGenerator = { String alphabet, int n ->
+	private sendRegistrationMail(user, hex) {
+
+		EmailCO emailCO = new EmailCO()
+		emailCO.userId = user.id
+		emailCO.mailTo = user.email
+		emailCO.mailFrom = "LinkShare<sandeep.poonia@intelligrape.com>"
+		emailCO.mailCc = null
+		emailCO.mailBcc = null
+		emailCO.subject = "Welcome to LinkShare - User account activation"
+		emailCO.contentType = "html"
+		emailCO.message = render template: 'RegistrationMailTemplate', model: [user: user, hex: hex]
+
+		linkshareMailService.sendMail(emailCO, true)
+	}
+
+	private String passwordGenerator = { String alphabet, int n ->
 		new Random().with {
 			(1..n).collect { alphabet[nextInt(alphabet.length())] }.join()
 		}
 	}
 
-	private errorRender = {
-		code, message ->
+	private String errorRender = {
+		Integer code, String message ->
 			return "<html><head><title>Server - Error report</title><style><!--H1 {font-family:Tahoma," +
 					"Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial," +
 					"sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial," +
@@ -357,7 +263,7 @@ class LoginController {
 			"HTTP_X_FORWARDED_FOR,HTTP_X_FORWARDED,HTTP_X_CLUSTER_CLIENT_IP,HTTP_CLIENT_IP,HTTP_FORWARDED_FOR," +
 			"HTTP_FORWARDED,HTTP_VIA,REMOTE_ADDR").split(",")
 
-	private getClientIpAddress = {
+	private String getClientIpAddress = {
 		HttpServletRequest request ->
 			for (String header : HEADERS_TO_TRY) {
 				String ip = request.getHeader(header);

@@ -5,7 +5,6 @@ import grails.transaction.Transactional
 
 class InvitationController {
 
-	def mailService
 	def linkshareMailService
 
 	def index() {}
@@ -56,46 +55,20 @@ class InvitationController {
 					println acceptLink
 					println rejectLink
 
-					String htmlMessage = """
-						<style type="text/css">
-							body, td{font-family:arial,sans-serif;font-size:13px}
-							a:link, a:active {color:#1155CC; text-decoration:none}
-							a:hover {text-decoration:underline; cursor: pointer}
-							a:visited{color:##6611CC}
-							img{border:0px}
-							pre {
-								white-space: pre; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; white-space: pre-wrap;
-								word-wrap: break-word; max-width: 800px; overflow: auto;
-							}
-						</style>
-						<div class="maincontent">
-							<table width=100% cellpadding=12 cellspacing=0 border=0>
-								<tr>
-									<td>
-										<div style="overflow: hidden;">
-											Dear ${user.userName},<br><br>
-											Your friend, ${session.user.userName} with email address <b>
-											<a href="mailto:${session.user.email}"
-												target="_blank">${session.user.email}</a>
-											</b> has asked you to subscribe to the below topic.<br>
-											<strong>Topic</strong>:${topic.topicName}<br><br>
-											<a href="${acceptLink}" target="_blank">
-												Click here
-											</a> to subscribe.<br><br>
-											<a href="${rejectLink}" target="_blank">
-												Click here
-											</a> to reject the invitation.
-											<br><br><br><br><i>This email has been generated automatically. Please, do not reply.</i>
-										</div>
-									</td>
-								</tr>
-							</table>
-						</div>
-					"""
+					EmailCO emailCO = new EmailCO()
+					emailCO.userId = (session.user as User).id
+					emailCO.mailTo = user.email
+					emailCO.mailFrom = "LinkShare<sandeep.poonia@intelligrape.com>"
+					emailCO.mailCc = null
+					emailCO.mailBcc = null
+					emailCO.subject = "Invitation to subscribe to topic"
+					emailCO.contentType = "html"
+					emailCO.message = render template: "InvitationMailTemplate", model: [user      : session.user,
+					                                                                     topic     : topic,
+					                                                                     acceptLink: acceptLink,
+					                                                                     rejectLink: rejectLink]
 
-					linkshareMailService.sendInvite((session.user as User).id, true, user.email,
-							"LinkShare<sandeep.poonia@intelligrape.com>", null, null,
-							"Invitation to subscribe to topic", "html", htmlMessage)
+					linkshareMailService.sendMail(emailCO, true)
 
 					mailSent = true
 			}
@@ -130,7 +103,7 @@ class InvitationController {
 					String inviteStatus = inviteId[4]
 
 					if (!user.isAttached()) {
-						println("Why not attached.................")
+						println("Why not attached.................????")
 						user.attach()
 					}
 
@@ -179,14 +152,14 @@ class InvitationController {
 		int response = 0
 		def topicId = params.id
 		Topic topic = Topic.findById(topicId)
-		if (topic && topic.scope){
+		if (topic && topic.scope) {
 			boolean isSubscribed = params.subscribed.equals("1")
-			Subscriptions subscriptions
-			if (isSubscribed){
+			Subscriptions subscriptions = null
+			if (isSubscribed) {
 				subscriptions = Subscriptions.findByTopicAndSubscriber(topic, session.user)
 				subscriptions.delete flush: true
 				response = 1
-			}else{
+			} else {
 				updateSubscriptionAndMapping(session.user, topic, subscriptions)
 				response = 2
 			}
@@ -194,7 +167,7 @@ class InvitationController {
 		render response
 	}
 
-	private updateSubscriptionAndMapping(User user, Topic topic, Subscriptions subscriptions) {
+	private static updateSubscriptionAndMapping(User user, Topic topic, Subscriptions subscriptions) {
 		subscriptions = new Subscriptions(subscriber: user, topic: topic)
 		subscriptions.save failOnError: true, flush: true
 
