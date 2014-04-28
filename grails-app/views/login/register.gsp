@@ -10,9 +10,9 @@
 <head>
 	<title>Register</title>
 	<meta name="layout" content="main"/>
-	<jqvalui:renderValidationScript for="com.ig.bootcamp.util.UserCO" qtip="true"
+	<jqvalui:renderValidationScript for="com.ig.bootcamp.util.UserCO" qtip="true" domain="com.ig.bootcamp.User"
 	                                renderErrorsOnTop="false" form="regForm"/>
-	                                %{--not="role,password,lastLoginTime,dateCreated,lastUpdated,failedLoginAttempts,resetPassword,enabled,locked"/>--}%
+	%{--not="role,password,lastLoginTime,dateCreated,lastUpdated,failedLoginAttempts,resetPassword,enabled,locked"/>--}%
 </head>
 
 <body>
@@ -59,11 +59,11 @@
 			</div>
 
 			%{--<div class="control-group">--}%
-				%{--<div class="input-prepend ">--}%
-					%{--<span class="add-on field-birthdate"></span>--}%
-					%{--<input type="date" id="dateOfBirth" name="dateOfBirth" value="${params.dateOfBirth}" required="true"--}%
-					       %{--placeholder="Date of birth"/>--}%
-				%{--</div>--}%
+			%{--<div class="input-prepend ">--}%
+			%{--<span class="add-on field-birthdate"></span>--}%
+			%{--<input type="date" id="dateOfBirth" name="dateOfBirth" value="${params.dateOfBirth}" required="true"--}%
+			%{--placeholder="Date of birth"/>--}%
+			%{--</div>--}%
 			%{--</div>--}%
 
 			<div class="control-group">
@@ -82,9 +82,9 @@
 			</div>
 
 			%{--<div class="control-group">--}%
-				%{--<div class="input-prepend ">--}%
-					%{--<div id="progressbar"></div>--}%
-				%{--</div>--}%
+			%{--<div class="input-prepend ">--}%
+			%{--<div id="progressbar"></div>--}%
+			%{--</div>--}%
 			%{--</div>--}%
 
 			<div class="control-group">
@@ -122,13 +122,13 @@
 	jQuery(function () {
 		$("#dateOfBirth").datepicker();
 	});
-//	$(function () {
-//		$("#plainPassword").complexify({}, function (valid, complexity) {
-//			$("#progressbar").progressbar({
-//				value: complexity
-//			});
-//		});
-//	});
+	//	$(function () {
+	//		$("#plainPassword").complexify({}, function (valid, complexity) {
+	//			$("#progressbar").progressbar({
+	//				value: complexity
+	//			});
+	//		});
+	//	});
 </script>
 
 <!-- Sign up -->

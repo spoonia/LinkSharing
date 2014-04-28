@@ -27,7 +27,7 @@ class CustomUniqueConstraint extends AbstractConstraint {
 	private boolean unique;
 	private List<String> uniquenessGroup = new ArrayList();
 
-	public UniqueConstraint() {
+	public CustomUniqueConstraint() {
 		ShutdownOperations.addOperation(new Runnable() {
 			public void run() {
 				ConstrainedProperty.removeConstraint("cunique", PersistentConstraintFactory.class);

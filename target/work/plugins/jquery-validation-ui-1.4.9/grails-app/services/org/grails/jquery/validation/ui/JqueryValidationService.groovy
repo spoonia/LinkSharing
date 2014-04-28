@@ -100,14 +100,17 @@ class JqueryValidationService {
 	String createJavaScriptMessages(List constrainedPropertiesEntries, Locale locale) {
 		FastStringWriter javaScriptMessages = new FastStringWriter(VALIDATION_MESSAGE_LENGTH * constrainedPropertiesEntries.size())
 		String namespacedPropertyName
+		String domain
 		def constrainedPropertyValues
 
 		constrainedPropertiesEntries.eachWithIndex { constrainedPropertiesEntry, entryIndex ->
 			constrainedPropertyValues = constrainedPropertiesEntry.constrainedProperties.values()
 			constrainedPropertyValues.eachWithIndex { constrainedProperty, propertyIndex ->
 				namespacedPropertyName = constrainedPropertiesEntry.namespace ? "'${constrainedPropertiesEntry.namespace}.${constrainedProperty.propertyName}'" : constrainedProperty.propertyName
+				domain = constrainedPropertiesEntry.domain
 				javaScriptMessages << "${namespacedPropertyName}: "
-				javaScriptMessages << _createJavaScriptMessages(constrainedProperty, locale, constrainedPropertiesEntry.namespace)
+				javaScriptMessages << _createJavaScriptMessages(constrainedProperty, locale,
+						constrainedPropertiesEntry.namespace, domain)
 				if (entryIndex == constrainedPropertiesEntries.size() - 1 &&
 						propertyIndex == constrainedPropertyValues.size() - 1) {
 					javaScriptMessages << "\n"
@@ -243,7 +246,7 @@ class JqueryValidationService {
 			message = messageSource.getMessage(code, args == null ? null : args.toArray(), null, locale)
 		}
 
-		if (!message){
+		if (!message) {
 			ERROR_CODE_SUFFIXES.each { errorSuffix ->
 				message = message ?: messageSource.getMessage("default.${constraintName}.${errorSuffix}", args == null ? null : args.toArray(), defaultMessage, locale)
 			}
@@ -289,7 +292,7 @@ class JqueryValidationService {
 			}
 		}
 		constraintNames.eachWithIndex { constraintName, i ->
-			if (constraintName.equals('cunique')){
+			if (constraintName.equals('cunique')) {
 				println constraintName
 				constraintName = 'unique'
 			}
@@ -408,7 +411,7 @@ class JqueryValidationService {
 		return javaScriptConstraints.toString()
 	}
 
-	private String _createJavaScriptMessages(def constrainedProperty, Locale locale, String namespace) {
+	private String _createJavaScriptMessages(def constrainedProperty, Locale locale, String namespace, String domain) {
 		def args = []
 		FastStringWriter javaScriptMessages = new FastStringWriter(VALIDATION_MESSAGE_LENGTH)
 		String javaScriptConstraint
@@ -450,9 +453,11 @@ class JqueryValidationService {
 		}
 
 		constraintNames.eachWithIndex { constraintName, i ->
-			if (constraintName.equals('cunique')){
-				println constraintName
+			if (constraintName.equals('cunique')) {
 				constraintName = 'unique'
+				if (domain){
+					constrainedProperty.owningClass = grailsApplication.getArtefact("Domain", domain)?.getClazz()
+				}
 			}
 			javaScriptConstraint = constraintsMap[constraintName]
 			javaScriptMessageCode = null

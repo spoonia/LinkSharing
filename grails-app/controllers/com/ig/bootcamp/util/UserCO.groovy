@@ -1,10 +1,8 @@
 package com.ig.bootcamp.util
-
 import com.ig.bootcamp.Roles
 import com.ig.bootcamp.User
-import org.codehaus.groovy.grails.orm.hibernate.validation.UniqueConstraint
+import org.codehaus.groovy.grails.validation.ConstrainedProperty
 import org.grails.databinding.BindingFormat
-
 /**
  * Created by sandeep on 20/4/14.
  */
@@ -30,7 +28,7 @@ class UserCO {
 
 	@Override
 	public String toString() {
-		UniqueConstraint
+		ConstrainedProperty constrainedProperty;
 		return "UserCO{$userId,$userName,$email,$plainPassword,$dateOfBirth,$confirmPassword}"
 	}
 }
