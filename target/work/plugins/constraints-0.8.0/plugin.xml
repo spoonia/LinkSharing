@@ -1,0 +1,50 @@
+<plugin name='constraints' version='0.8.0' grailsVersion='2.0 &gt; *'>
+  <author>Geoff Lane</author>
+  <authorEmail>geoff@zorched.net</authorEmail>
+  <title>Custom domain constraints plugin</title>
+  <description>
+    This plugin allows you to create custom domain validations that are applied the same
+    way as built-in domain constraints.
+    </description>
+  <documentation>http://grails.org/plugin/constraints</documentation>
+  <type>ConstraintsGrailsPlugin</type>
+  <resources>
+    <resource>AddressCommand</resource>
+    <resource>TestController</resource>
+    <resource>net.zorched.test.Address</resource>
+    <resource>net.zorched.test.Category</resource>
+    <resource>net.zorched.test.Compared</resource>
+    <resource>net.zorched.test.Foo</resource>
+    <resource>net.zorched.test.HasExtendedValidators</resource>
+    <resource>net.zorched.test.InjectedDom</resource>
+    <resource>net.zorched.test.Login</resource>
+    <resource>net.zorched.test.Person</resource>
+    <resource>net.zorched.test.User</resource>
+    <resource>net.zorched.test.MyTestService</resource>
+    <resource>net.zorched.constraints.ComparisonConstraint</resource>
+    <resource>net.zorched.constraints.SsnConstraint</resource>
+    <resource>net.zorched.constraints.UsPhoneConstraint</resource>
+    <resource>net.zorched.constraints.UsZipConstraint</resource>
+    <resource>net.zorched.test.AddressAnno</resource>
+    <resource>net.zorched.test.BeginsWithConstraint</resource>
+    <resource>net.zorched.test.CompareConstraint</resource>
+    <resource>net.zorched.test.ErrorCodeConstraint</resource>
+    <resource>net.zorched.test.ErrorParamsConstraint</resource>
+    <resource>net.zorched.test.InjectedConstraint</resource>
+    <resource>net.zorched.test.NullReturningConstraint</resource>
+    <resource>net.zorched.test.StartsAndEndsWithConstraint</resource>
+    <resource>net.zorched.test.TwoLongConstraint</resource>
+    <resource>net.zorched.test.UniqueEgConstraint</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://plugins.grails.org' />
+    <repository name='http://repo.grails.org/grails/plugins' url='http://repo.grails.org/grails/plugins/' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='grailsCore' url='http://svn.codehaus.org/grails/trunk/grails-plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies />
+  <plugins />
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>

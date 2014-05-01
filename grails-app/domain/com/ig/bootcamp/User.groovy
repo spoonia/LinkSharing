@@ -1,12 +1,15 @@
 package com.ig.bootcamp
 
-@grails.validation.Validateable
+import grails.util.GrailsNameUtils
+import org.grails.databinding.BindingFormat
+
 class User {
 
 	String userId
 	String userName
 	String email
 	String password
+	@BindingFormat('MMMM dd, yyyy')
 	Date dateOfBirth
 	Date lastLoginTime = new Date()
 	Date dateCreated
@@ -41,9 +44,11 @@ class User {
 				validator: {
 					val, obj ->
 						if (!val.equals(obj.plainPassword)) {
-							return ['user.validator.password.mismatch']
+							String messageCode = "${GrailsNameUtils.getPropertyName(obj.class)}.password.mismatch"
+							return [messageCode]
 						} else if (val.equals(obj.userId)) {
-							return ['user.validator.userId.password.matches']
+							String messageCode = "${GrailsNameUtils.getPropertyName(obj.class)}.userId.password.matches"
+							return [messageCode]
 						}
 				}
 	}

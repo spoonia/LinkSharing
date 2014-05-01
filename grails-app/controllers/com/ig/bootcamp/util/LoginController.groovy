@@ -32,6 +32,8 @@ class LoginController {
 				flash.message = "Email Id already registered!"
 			} else {
 				println('*********************************************************')
+				User user = new User()
+				user.properties = userCO.properties
 				if (!userCO.validate()) {
 					// validation failed, render registration page again
 					if (userCO.hasErrors()) {
@@ -42,7 +44,6 @@ class LoginController {
 						return [user: userCO]
 					}
 				} else {
-					User user = new User(params)
 					user.password = userCO.plainPassword.encodeAsSHA1()
 					user.role = Roles.findByRole('User')
 					user.enabled = false;

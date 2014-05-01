@@ -10,8 +10,13 @@
 <head>
 	<title>Register</title>
 	<meta name="layout" content="main"/>
-	<jqvalui:renderValidationScript for="com.ig.bootcamp.util.UserCO" qtip="true" domain="com.ig.bootcamp.User"
-	                                renderErrorsOnTop="false" form="regForm"/>
+	<jqvalui:renderValidationScript for="com.ig.bootcamp.util.UserCO" qtip="true" renderErrorsOnTop="false" form="regForm">
+		<jqvalui:applyUniqueConstraint domain="com.ig.bootcamp.User" property="email"/>
+		<jqvalui:applyUniqueConstraint domain="com.ig.bootcamp.User" property="userId" message="UserId already used!"/>
+		<jqvalui:applyCustomConstraint rule="notEqualTo" property="plainPassword" parameter="userId"/>
+		<jqvalui:applyCustomConstraint rule="equalTo" property="confirmPassword" parameter="plainPassword"/>
+		<jqvalui:applyUniqueConstraint domain="com.ig.bootcamp.User" property="userId"/>
+	</jqvalui:renderValidationScript>
 	%{--not="role,password,lastLoginTime,dateCreated,lastUpdated,failedLoginAttempts,resetPassword,enabled,locked"/>--}%
 </head>
 

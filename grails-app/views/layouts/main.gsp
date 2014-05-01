@@ -26,7 +26,7 @@
 	%{--<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>--}%
 	%{--<script src="https://raw.github.com/danpalmer/jquery.complexify.js/master/jquery.complexify.js"></script>--}%
 	<g:javascript library="application"/>
-	<g:javascript library="migrate"/>
+	%{--<g:javascript library="migrate"/>--}%
 	<g:javascript library="raty"/>
 
 	<r:layoutResources/>
@@ -41,13 +41,6 @@
 			changeYear: true,
 			dateFormat: "MM dd, yy"
 		});
-		jQuery.validator.addMethod("notEqual", function (value, element, param) {
-			return this.optional(element) || value != $(param).val();
-		}, "This has to be different...");
-
-		jQuery.validator.addMethod("equalsTo", function (value, element, param) {
-			return value.toLowerCase() == $(param).val().toLowerCase();
-		}, jQuery.validator.format('Value not matches the given regular expression '+($("#userId").attr('id'))+'.'));
 	</script>
 </head>
 
